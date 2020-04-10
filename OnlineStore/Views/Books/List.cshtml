@@ -1,0 +1,10 @@
+﻿    <h1>All boks</h1>
+    @*<h3>@Model.bookCategory</h3>*@
+<div class="row mt-5 mb-2">
+    @{ 
+        foreach (Book book in Model.getAllBooks)
+        {
+         @Html.Partial("AllBooks", book);
+            }
+        }
+    </div>
