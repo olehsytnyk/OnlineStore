@@ -49,6 +49,9 @@ namespace OnlineStore.Data
                         Category = Categories["Another"]
                     });
 
+            var book = content.Book.Where(c => c.id == 3).FirstOrDefault(); // how to update fields
+            book.name = "Lol"; // remember it bitch
+
             content.SaveChanges();
 
         }
